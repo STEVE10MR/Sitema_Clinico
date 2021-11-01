@@ -70,7 +70,7 @@ public class Personal_Administrativo_N implements CRUD<Personal_Administrativo> 
             return L_Personal_Administrativo;
         }
     }
-    public ArrayList<Personal_Administrativo> ListarTodos(String Busqueda) {
+    public ArrayList<Personal_Administrativo> Buscar(String Busqueda) {
         
         ArrayList<Personal_Administrativo> L_Personal_Administrativo = null;
         PreparedStatement ps=null;

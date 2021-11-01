@@ -56,16 +56,7 @@ public class Medico {
     /**
      * @return the Nombre
      */
-    public String getNombre() {
-        return Nombre;
-    }
-
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
+  
 
     /**
      * @return the Limite_Atencion
@@ -83,7 +74,6 @@ public class Medico {
     private int ID_Medico;
     private Personal_Clinico personal_clinico;
     private Especialidad especialidad;
-    private String Nombre;
     private int Limite_Atencion;
     
 }

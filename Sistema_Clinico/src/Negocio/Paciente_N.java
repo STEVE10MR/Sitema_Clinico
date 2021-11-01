@@ -64,7 +64,7 @@ public class Paciente_N implements CRUD<Paciente> {
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="SELECT DNI_Pac,Nombre_Pac,Apellido_Pac,Telefono_Pac,Edad_Pac,Afilacion_Pac,SIS_Pac FROM Paciente WHERE DNI_Pac=?;";
+        String sql="SELECT ID_Paciente,DNI_Pac,Nombre_Pac,Apellido_Pac,Telefono_Pac,Edad_Pac,Afilacion_Pac,SIS_Pac FROM Paciente WHERE ID_Paciente=?;";
         try{
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
@@ -131,7 +131,7 @@ public class Paciente_N implements CRUD<Paciente> {
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="UPDATE Paciente SET Nombre_Pac=?,Apellido_Pac=?,Telefono_Pac=?,Edad_Pac=?,Afilacion_Pac=?,SIS_Pac=? WHERE DNI_Pac=?;";
+        String sql="UPDATE Paciente SET Nombre_Pac=?,Apellido_Pac=?,Telefono_Pac=?,Edad_Pac=?,Afilacion_Pac=?,SIS_Pac=?,DNI_Pac=? WHERE ID_Paciente=?;";
         try {
             ps=con.prepareStatement(sql);
             ps.setString(1,obj.getNombre());
@@ -141,6 +141,7 @@ public class Paciente_N implements CRUD<Paciente> {
             ps.setString(5,obj.getAfilacion());
             ps.setString(6,obj.getSIS());
             ps.setString(7,obj.getDNI());
+            ps.setInt(8,obj.getID_Paciente());
             int fa=ps.executeUpdate();
             if(fa>0)
             {

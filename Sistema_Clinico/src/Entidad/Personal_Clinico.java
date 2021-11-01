@@ -26,20 +26,6 @@ public class Personal_Clinico {
     }
 
     /**
-     * @return the cargo
-     */
-    public Cargo getCargo() {
-        return cargo;
-    }
-
-    /**
-     * @param cargo the cargo to set
-     */
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
-    }
-
-    /**
      * @return the usuario
      */
     public Usuario getUsuario() {

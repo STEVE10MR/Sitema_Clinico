@@ -11,6 +11,7 @@ package Entidad;
  */
 public class Especialidad {
 
+
     /**
      * @return the ID_Especialidad
      */
