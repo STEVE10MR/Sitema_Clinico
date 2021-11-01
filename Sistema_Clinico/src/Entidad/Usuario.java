@@ -42,16 +42,7 @@ public class Usuario {
     /**
      * @return the horario
      */
-    public Horario getHorario() {
-        return horario;
-    }
-
-    /**
-     * @param horario the horario to set
-     */
-    public void setHorario(Horario horario) {
-        this.horario = horario;
-    }
+  
 
     /**
      * @return the Nombre_usu
@@ -82,7 +73,6 @@ public class Usuario {
     }
     private int ID_Usuario;
     private Estado_Usuario estado_usuario;
-    private Horario horario;
     private String Nombre_usu;
     private String Clave_usu;
 }

@@ -123,7 +123,6 @@ public class Personal_Clinico {
         this.Email = Email;
     }
     private int ID_Personal_Clinico;
-    private Cargo cargo;
     private Usuario usuario;
     private String DNI;
     private String Nombre;
