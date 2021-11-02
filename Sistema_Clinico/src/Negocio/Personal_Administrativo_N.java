@@ -45,11 +45,11 @@ public class Personal_Administrativo_N implements CRUD<Personal_Administrativo> 
                 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(2));
-                E_Personal_Clinico.setDNI(rs.getString(3));
-                E_Personal_Clinico.setNombre(rs.getString(4));
-                E_Personal_Clinico.setApellido(rs.getString(5));
-                E_Personal_Clinico.setEmail(rs.getString(6));
-                E_Personal_Clinico.setTelefono(rs.getString(7));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(3));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(4));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(5));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(6));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(7));
                 
                 
                 E_Personal_Administrativo.setID_Personal_Administrativo(rs.getInt(1));
@@ -93,11 +93,11 @@ public class Personal_Administrativo_N implements CRUD<Personal_Administrativo> 
                 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(2));
-                E_Personal_Clinico.setDNI(rs.getString(3));
-                E_Personal_Clinico.setNombre(rs.getString(4));
-                E_Personal_Clinico.setApellido(rs.getString(5));
-                E_Personal_Clinico.setEmail(rs.getString(6));
-                E_Personal_Clinico.setTelefono(rs.getString(7));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(3));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(4));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(5));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(6));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(7));
                 
                 
                 E_Personal_Administrativo.setID_Personal_Administrativo(rs.getInt(1));

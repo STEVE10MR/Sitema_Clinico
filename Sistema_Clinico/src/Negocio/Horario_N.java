@@ -7,6 +7,7 @@ package Negocio;
 
 import Entidad.Horario;
 import Entidad.Paciente;
+import Entidad.Dia;//NUEVO
 import Negocio.DAO.CRUD;
 import java.sql.Connection;
 import java.sql.Date;
@@ -35,13 +36,12 @@ public class Horario_N implements CRUD<Horario>{
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="INSERT INTO Horario VALUE(?,?,?);";
+        String sql="INSERT INTO Horario VALUE(?,?);";
         try {
             
             ps=con.prepareStatement(sql);
-            ps.setDate(1,(Date)obj.getFecha_Atencion());
-            ps.setDate(2,(Date)obj.getInicio_Atencion());
-            ps.setDate(3,(Date)obj.getFin_Atencion());
+            ps.setDate(1,(Date)obj.getInicio_Atencion_Hor());
+            ps.setDate(2,(Date)obj.getFin_Atencion_Hor());
             
             int fa=ps.executeUpdate();
             
@@ -66,12 +66,11 @@ public class Horario_N implements CRUD<Horario>{
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="UPDATE Horario SET Fecha_Atencion_Hor=?,Inicio_Atencion_Hor=?,Fin_Atencion_Hor=? WHERE ID_Horario=?;";
+        String sql="UPDATE Horario SET Inicio_Atencion_Hor=?,Fin_Atencion_Hor=? WHERE ID_Horario=?;";
         try {
             ps=con.prepareStatement(sql);
-            ps.setDate(1,(Date)obj.getFecha_Atencion());
-            ps.setDate(2,(Date)obj.getInicio_Atencion());
-            ps.setDate(3,(Date)obj.getFin_Atencion());
+            ps.setDate(1,(Date)obj.getInicio_Atencion_Hor());
+            ps.setDate(2,(Date)obj.getFin_Atencion_Hor());
             ps.setInt(4,obj.getID_Horario());
             int fa=ps.executeUpdate();
             if(fa>0)

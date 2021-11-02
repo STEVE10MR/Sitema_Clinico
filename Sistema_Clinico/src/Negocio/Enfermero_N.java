@@ -44,15 +44,15 @@ public class Enfermero_N implements CRUD<Enfermero>{
                 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(2));
-                E_Personal_Clinico.setDNI(rs.getString(3));
-                E_Personal_Clinico.setNombre(rs.getString(4));
-                E_Personal_Clinico.setApellido(rs.getString(5));
-                E_Personal_Clinico.setEmail(rs.getString(6));
-                E_Personal_Clinico.setTelefono(rs.getString(7));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(3));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(4));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(5));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(6));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(7));
                 
                 
                 E_Enfermero.setID_Enfermero(rs.getInt(1));
-                E_Enfermero.setPersonal(E_Personal_Clinico);
+                E_Enfermero.setPersonal_clinico(E_Personal_Clinico);
                 
                 boolean add = L_Enfermero.add(E_Enfermero);
                 //error si al anadir un objeto al arraylist de un error
@@ -84,7 +84,7 @@ public class Enfermero_N implements CRUD<Enfermero>{
         try {
             
             ps=con.prepareStatement(sql);
-            ps.setInt(1,obj.getPersonal().getID_Personal_Clinico());
+            ps.setInt(1,obj.getPersonal_clinico().getID_Personal_Clinico());
    
             int fa=ps.executeUpdate();
             
@@ -107,9 +107,9 @@ public class Enfermero_N implements CRUD<Enfermero>{
     public void Actualizar(Enfermero obj) {
         Personal_Clinico_N personal_clinico_= new Personal_Clinico_N();
         
-        if(obj.getPersonal()!= null)
+        if(obj.getPersonal_clinico()!= null)
         {
-           personal_clinico_.Actualizar(obj.getPersonal()); 
+           personal_clinico_.Actualizar(obj.getPersonal_clinico()); 
         }
         else
         {
@@ -139,15 +139,15 @@ public class Enfermero_N implements CRUD<Enfermero>{
                 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(2));
-                E_Personal_Clinico.setDNI(rs.getString(3));
-                E_Personal_Clinico.setNombre(rs.getString(4));
-                E_Personal_Clinico.setApellido(rs.getString(5));
-                E_Personal_Clinico.setEmail(rs.getString(6));
-                E_Personal_Clinico.setTelefono(rs.getString(7));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(3));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(4));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(5));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(6));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(7));
                 
                 
                 E_Enfermero.setID_Enfermero(rs.getInt(1));
-                E_Enfermero.setPersonal(E_Personal_Clinico);
+                E_Enfermero.setPersonal_clinico(E_Personal_Clinico);
                 
                 boolean add = L_Enfermero.add(E_Enfermero);
                 //error si al anadir un objeto al arraylist de un error

@@ -10,109 +10,68 @@ package Entidad;
  * @author USUARIO
  */
 public class Personal_Clinico {
+    
+    private int ID_Personal_Clinico;
+    private Usuario usuario;
+    private String DNI_PerCli;
+    private String Nombre_PerCli;
+    private String Apellido_PerCli;
+    private String Telefono_PerCli;
+    private String Email_PerCli;
 
-    /**
-     * @return the ID_Personal_Clinico
-     */
     public int getID_Personal_Clinico() {
         return ID_Personal_Clinico;
     }
 
-    /**
-     * @param ID_Personal_Clinico the ID_Personal_Clinico to set
-     */
     public void setID_Personal_Clinico(int ID_Personal_Clinico) {
         this.ID_Personal_Clinico = ID_Personal_Clinico;
     }
 
-    /**
-     * @return the usuario
-     */
     public Usuario getUsuario() {
         return usuario;
     }
 
-    /**
-     * @param usuario the usuario to set
-     */
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
 
-    /**
-     * @return the DNI
-     */
-    public String getDNI() {
-        return DNI;
+    public String getDNI_PerCli() {
+        return DNI_PerCli;
     }
 
-    /**
-     * @param DNI the DNI to set
-     */
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public void setDNI_PerCli(String DNI_PerCli) {
+        this.DNI_PerCli = DNI_PerCli;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_PerCli() {
+        return Nombre_PerCli;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_PerCli(String Nombre_PerCli) {
+        this.Nombre_PerCli = Nombre_PerCli;
     }
 
-    /**
-     * @return the Apellido
-     */
-    public String getApellido() {
-        return Apellido;
+    public String getApellido_PerCli() {
+        return Apellido_PerCli;
     }
 
-    /**
-     * @param Apellido the Apellido to set
-     */
-    public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+    public void setApellido_PerCli(String Apellido_PerCli) {
+        this.Apellido_PerCli = Apellido_PerCli;
     }
 
-    /**
-     * @return the Telefono
-     */
-    public String getTelefono() {
-        return Telefono;
+    public String getTelefono_PerCli() {
+        return Telefono_PerCli;
     }
 
-    /**
-     * @param Telefono the Telefono to set
-     */
-    public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+    public void setTelefono_PerCli(String Telefono_PerCli) {
+        this.Telefono_PerCli = Telefono_PerCli;
     }
 
-    /**
-     * @return the Email
-     */
-    public String getEmail() {
-        return Email;
+    public String getEmail_PerCli() {
+        return Email_PerCli;
     }
 
-    /**
-     * @param Email the Email to set
-     */
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail_PerCli(String Email_PerCli) {
+        this.Email_PerCli = Email_PerCli;
     }
-    private int ID_Personal_Clinico;
-    private Usuario usuario;
-    private String DNI;
-    private String Nombre;
-    private String Apellido;
-    private String Telefono;
-    private String Email;
 }

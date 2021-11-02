@@ -10,94 +10,59 @@ package Entidad;
  * @author USUARIO
  */
 public class Detalle_Orden_Pedido {
+    
+    private int ID_Detalle_Orden_Pedido;
+    private Boleta boleta;
+    private Medicamento medicamento;
+    private int Cantidad_DetOrd;
+    private double Subtotal_DetOrd;
+    private double Importe_DetOrd;
 
-    /**
-     * @return the ID_Detalle_Orden_Pedido
-     */
     public int getID_Detalle_Orden_Pedido() {
         return ID_Detalle_Orden_Pedido;
     }
 
-    /**
-     * @param ID_Detalle_Orden_Pedido the ID_Detalle_Orden_Pedido to set
-     */
     public void setID_Detalle_Orden_Pedido(int ID_Detalle_Orden_Pedido) {
         this.ID_Detalle_Orden_Pedido = ID_Detalle_Orden_Pedido;
     }
 
-    /**
-     * @return the Num_Orden
-     */
-    public int getNum_Orden() {
-        return Num_Orden;
+    public Boleta getBoleta() {
+        return boleta;
     }
 
-    /**
-     * @param Num_Orden the Num_Orden to set
-     */
-    public void setNum_Orden(int Num_Orden) {
-        this.Num_Orden = Num_Orden;
+    public void setBoleta(Boleta boleta) {
+        this.boleta = boleta;
     }
 
-    /**
-     * @return the producto
-     */
-    public Producto getProducto() {
-        return producto;
+    public Medicamento getMedicamento() {
+        return medicamento;
     }
 
-    /**
-     * @param producto the producto to set
-     */
-    public void setProducto(Producto producto) {
-        this.producto = producto;
+    public void setMedicamento(Medicamento medicamento) {
+        this.medicamento = medicamento;
     }
 
-    /**
-     * @return the Cantidad
-     */
-    public int getCantidad() {
-        return Cantidad;
+    public int getCantidad_DetOrd() {
+        return Cantidad_DetOrd;
     }
 
-    /**
-     * @param Cantidad the Cantidad to set
-     */
-    public void setCantidad(int Cantidad) {
-        this.Cantidad = Cantidad;
+    public void setCantidad_DetOrd(int Cantidad_DetOrd) {
+        this.Cantidad_DetOrd = Cantidad_DetOrd;
     }
 
-    /**
-     * @return the Precio_Venta
-     */
-    public double getPrecio_Venta() {
-        return Precio_Venta;
+    public double getSubtotal_DetOrd() {
+        return Subtotal_DetOrd;
     }
 
-    /**
-     * @param Precio_Venta the Precio_Venta to set
-     */
-    public void setPrecio_Venta(double Precio_Venta) {
-        this.Precio_Venta = Precio_Venta;
+    public void setSubtotal_DetOrd(double Subtotal_DetOrd) {
+        this.Subtotal_DetOrd = Subtotal_DetOrd;
     }
 
-    /**
-     * @return the Importe
-     */
-    public double getImporte() {
-        return Importe;
+    public double getImporte_DetOrd() {
+        return Importe_DetOrd;
     }
 
-    /**
-     * @param Importe the Importe to set
-     */
-    public void setImporte(double Importe) {
-        this.Importe = Importe;
+    public void setImporte_DetOrd(double Importe_DetOrd) {
+        this.Importe_DetOrd = Importe_DetOrd;
     }
-    private int ID_Detalle_Orden_Pedido;
-    private int Num_Orden;
-    private Producto producto;
-    private int Cantidad;
-    private double Precio_Venta;
-    private double Importe;
 }

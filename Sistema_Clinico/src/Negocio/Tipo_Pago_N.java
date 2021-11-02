@@ -31,7 +31,7 @@ public class Tipo_Pago_N {
             {
                 Tipo_Pago E_Tipo_Pago=new Tipo_Pago();
                 E_Tipo_Pago.setID_Tipo_Pago(rs.getInt(1));
-                E_Tipo_Pago.setNombre(rs.getString(2));
+                E_Tipo_Pago.setNombre_TipPag(rs.getString(2));
                 
                 boolean add = L_Tipo_Pago.add(E_Tipo_Pago);
                 //error si al anadir un objeto al arraylist de un error

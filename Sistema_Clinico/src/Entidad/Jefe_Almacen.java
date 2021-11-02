@@ -10,35 +10,23 @@ package Entidad;
  * @author USUARIO
  */
 public class Jefe_Almacen  {
-
-    /**
-     * @return the ID_jefe_almacen
-     */
-    public int getID_jefe_almacen() {
-        return ID_jefe_almacen;
-    }
-
-    /**
-     * @param ID_jefe_almacen the ID_jefe_almacen to set
-     */
-    public void setID_jefe_almacen(int ID_jefe_almacen) {
-        this.ID_jefe_almacen = ID_jefe_almacen;
-    }
-
-    /**
-     * @return the personal
-     */
-    public Personal_Clinico getPersonal() {
-        return personal;
-    }
-
-    /**
-     * @param personal the personal to set
-     */
-    public void setPersonal(Personal_Clinico personal) {
-        this.personal = personal;
-    }
     
-    private int ID_jefe_almacen;
-    private Personal_Clinico personal;
+    private int ID_Jefe_Almacen;
+    private Personal_Clinico personal_clinico;
+
+    public int getID_Jefe_Almacen() {
+        return ID_Jefe_Almacen;
+    }
+
+    public void setID_Jefe_Almacen(int ID_Jefe_Almacen) {
+        this.ID_Jefe_Almacen = ID_Jefe_Almacen;
+    }
+
+    public Personal_Clinico getPersonal_clinico() {
+        return personal_clinico;
+    }
+
+    public void setPersonal_clinico(Personal_Clinico personal_clinico) {
+        this.personal_clinico = personal_clinico;
+    }
 }

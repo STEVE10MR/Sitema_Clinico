@@ -35,13 +35,13 @@ public class Paciente_N implements CRUD<Paciente> {
             while(rs.next())
             {
                 Paciente E_Paciente=new Paciente();
-                E_Paciente.setDNI(rs.getString(1));
-                E_Paciente.setNombre(rs.getString(2));
-                E_Paciente.setApellido(rs.getString(3));
-                E_Paciente.setTelefono(rs.getString(4));
-                E_Paciente.setEdad(rs.getInt(5));
-                E_Paciente.setAfilacion(rs.getString(6));
-                E_Paciente.setSIS(rs.getString(7));
+                E_Paciente.setDNI_Pac(rs.getString(1));
+                E_Paciente.setNombre_Pac(rs.getString(2));
+                E_Paciente.setApellido_Pac(rs.getString(3));
+                E_Paciente.setTelefono_Pac(rs.getString(4));
+                E_Paciente.setEdad_Pac(rs.getInt(5));
+                E_Paciente.setAfilacion_Pac(rs.getString(6));
+                E_Paciente.setSIS_Pac(rs.getString(7));
                 
                 boolean add = L_paciente.add(E_Paciente);
                 //error si al anadir un objeto al arraylist de un error
@@ -72,13 +72,13 @@ public class Paciente_N implements CRUD<Paciente> {
             while(rs.next())
             {
                 Paciente E_Paciente=new Paciente();
-                E_Paciente.setDNI(rs.getString(1));
-                E_Paciente.setNombre(rs.getString(2));
-                E_Paciente.setApellido(rs.getString(3));
-                E_Paciente.setTelefono(rs.getString(4));
-                E_Paciente.setEdad(rs.getInt(5));
-                E_Paciente.setAfilacion(rs.getString(6));
-                E_Paciente.setSIS(rs.getString(7));
+                E_Paciente.setDNI_Pac(rs.getString(1));
+                E_Paciente.setNombre_Pac(rs.getString(2));
+                E_Paciente.setApellido_Pac(rs.getString(3));
+                E_Paciente.setTelefono_Pac(rs.getString(4));
+                E_Paciente.setEdad_Pac(rs.getInt(5));
+                E_Paciente.setAfilacion_Pac(rs.getString(6));
+                E_Paciente.setSIS_Pac(rs.getString(7));
                 
                 return E_Paciente;
             }
@@ -101,13 +101,13 @@ public class Paciente_N implements CRUD<Paciente> {
         try {
             
             ps=con.prepareStatement(sql);
-            ps.setString(1,obj.getDNI());
-            ps.setString(2,obj.getNombre());
-            ps.setString(3,obj.getApellido());
-            ps.setString(4,obj.getTelefono());
-            ps.setInt(5,obj.getEdad());
-            ps.setString(6,obj.getAfilacion());
-            ps.setString(7,obj.getSIS());
+            ps.setString(1,obj.getDNI_Pac());
+            ps.setString(2,obj.getNombre_Pac());
+            ps.setString(3,obj.getApellido_Pac());
+            ps.setString(4,obj.getTelefono_Pac());
+            ps.setInt(5,obj.getEdad_Pac());
+            ps.setString(6,obj.getAfilacion_Pac());
+            ps.setString(7,obj.getSIS_Pac());
             
             int fa=ps.executeUpdate();
             
@@ -134,13 +134,13 @@ public class Paciente_N implements CRUD<Paciente> {
         String sql="UPDATE Paciente SET Nombre_Pac=?,Apellido_Pac=?,Telefono_Pac=?,Edad_Pac=?,Afilacion_Pac=?,SIS_Pac=?,DNI_Pac=? WHERE ID_Paciente=?;";
         try {
             ps=con.prepareStatement(sql);
-            ps.setString(1,obj.getNombre());
-            ps.setString(2,obj.getApellido());
-            ps.setString(3,obj.getTelefono());
-            ps.setInt(4,obj.getEdad());
-            ps.setString(5,obj.getAfilacion());
-            ps.setString(6,obj.getSIS());
-            ps.setString(7,obj.getDNI());
+            ps.setString(1,obj.getNombre_Pac());
+            ps.setString(2,obj.getApellido_Pac());
+            ps.setString(3,obj.getTelefono_Pac());
+            ps.setInt(4,obj.getEdad_Pac());
+            ps.setString(5,obj.getAfilacion_Pac());
+            ps.setString(6,obj.getSIS_Pac());
+            ps.setString(7,obj.getDNI_Pac());
             ps.setInt(8,obj.getID_Paciente());
             int fa=ps.executeUpdate();
             if(fa>0)

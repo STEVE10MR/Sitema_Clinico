@@ -10,79 +10,50 @@ package Entidad;
  * @author USUARIO
  */
 public class Proveedor {
+    
+    private int ID_Proveedor;
+    private String DNI_Pro;
+    private String Nombre_Pro;
+    private String Apellido_Pro;
+    private String Telefono_Pro;
 
-    /**
-     * @return the ID_Proveedor
-     */
     public int getID_Proveedor() {
         return ID_Proveedor;
     }
 
-    /**
-     * @param ID_Proveedor the ID_Proveedor to set
-     */
     public void setID_Proveedor(int ID_Proveedor) {
         this.ID_Proveedor = ID_Proveedor;
     }
 
-    /**
-     * @return the DNI
-     */
-    public String getDNI() {
-        return DNI;
+    public String getDNI_Pro() {
+        return DNI_Pro;
     }
 
-    /**
-     * @param DNI the DNI to set
-     */
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public void setDNI_Pro(String DNI_Pro) {
+        this.DNI_Pro = DNI_Pro;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_Pro() {
+        return Nombre_Pro;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_Pro(String Nombre_Pro) {
+        this.Nombre_Pro = Nombre_Pro;
     }
 
-    /**
-     * @return the Apellido
-     */
-    public String getApellido() {
-        return Apellido;
+    public String getApellido_Pro() {
+        return Apellido_Pro;
     }
 
-    /**
-     * @param Apellido the Apellido to set
-     */
-    public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+    public void setApellido_Pro(String Apellido_Pro) {
+        this.Apellido_Pro = Apellido_Pro;
     }
 
-    /**
-     * @return the Telefono
-     */
-    public String getTelefono() {
-        return Telefono;
+    public String getTelefono_Pro() {
+        return Telefono_Pro;
     }
 
-    /**
-     * @param Telefono the Telefono to set
-     */
-    public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+    public void setTelefono_Pro(String Telefono_Pro) {
+        this.Telefono_Pro = Telefono_Pro;
     }
-    private int ID_Proveedor;
-    private String DNI;
-    private String Nombre;
-    private String Apellido;
-    private String Telefono;
 }

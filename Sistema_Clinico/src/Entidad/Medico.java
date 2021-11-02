@@ -10,70 +10,42 @@ package Entidad;
  * @author USUARIO
  */
 public class Medico {
+    
+    private int ID_Medico;
+    private Personal_Clinico personal_clinico;
+    private Especialidad especialidad;
+    private int Limite_Atencion_Med;
 
-    /**
-     * @return the ID_Medico
-     */
     public int getID_Medico() {
         return ID_Medico;
     }
 
-    /**
-     * @param ID_Medico the ID_Medico to set
-     */
     public void setID_Medico(int ID_Medico) {
         this.ID_Medico = ID_Medico;
     }
 
-    /**
-     * @return the personal_clinico
-     */
     public Personal_Clinico getPersonal_clinico() {
         return personal_clinico;
     }
 
-    /**
-     * @param personal_clinico the personal_clinico to set
-     */
     public void setPersonal_clinico(Personal_Clinico personal_clinico) {
         this.personal_clinico = personal_clinico;
     }
 
-    /**
-     * @return the especialidad
-     */
     public Especialidad getEspecialidad() {
         return especialidad;
     }
 
-    /**
-     * @param especialidad the especialidad to set
-     */
     public void setEspecialidad(Especialidad especialidad) {
         this.especialidad = especialidad;
     }
 
-    /**
-     * @return the Nombre
-     */
-  
-
-    /**
-     * @return the Limite_Atencion
-     */
-    public int getLimite_Atencion() {
-        return Limite_Atencion;
+    public int getLimite_Atencion_Med() {
+        return Limite_Atencion_Med;
     }
 
-    /**
-     * @param Limite_Atencion the Limite_Atencion to set
-     */
-    public void setLimite_Atencion(int Limite_Atencion) {
-        this.Limite_Atencion = Limite_Atencion;
+    public void setLimite_Atencion_Med(int Limite_Atencion_Med) {
+        this.Limite_Atencion_Med = Limite_Atencion_Med;
     }
-    private int ID_Medico;
-    private Personal_Clinico personal_clinico;
-    private Especialidad especialidad;
-    private int Limite_Atencion;
     
 }

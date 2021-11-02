@@ -10,69 +10,41 @@ package Entidad;
  * @author USUARIO
  */
 public class Usuario {
+    
+    private int ID_Usuario;
+    private Estado_Usuario estado_usuario;
+    private String Nombre_Usu;
+    private String Clave_Usu;
 
-    /**
-     * @return the ID_Usuario
-     */
     public int getID_Usuario() {
         return ID_Usuario;
     }
 
-    /**
-     * @param ID_Usuario the ID_Usuario to set
-     */
     public void setID_Usuario(int ID_Usuario) {
         this.ID_Usuario = ID_Usuario;
     }
 
-    /**
-     * @return the estado_usuario
-     */
     public Estado_Usuario getEstado_usuario() {
         return estado_usuario;
     }
 
-    /**
-     * @param estado_usuario the estado_usuario to set
-     */
     public void setEstado_usuario(Estado_Usuario estado_usuario) {
         this.estado_usuario = estado_usuario;
     }
 
-    /**
-     * @return the horario
-     */
-  
-
-    /**
-     * @return the Nombre_usu
-     */
-    public String getNombre_usu() {
-        return Nombre_usu;
+    public String getNombre_Usu() {
+        return Nombre_Usu;
     }
 
-    /**
-     * @param Nombre_usu the Nombre_usu to set
-     */
-    public void setNombre_usu(String Nombre_usu) {
-        this.Nombre_usu = Nombre_usu;
+    public void setNombre_Usu(String Nombre_Usu) {
+        this.Nombre_Usu = Nombre_Usu;
     }
 
-    /**
-     * @return the Clave_usu
-     */
-    public String getClave_usu() {
-        return Clave_usu;
+    public String getClave_Usu() {
+        return Clave_Usu;
     }
 
-    /**
-     * @param Clave_usu the Clave_usu to set
-     */
-    public void setClave_usu(String Clave_usu) {
-        this.Clave_usu = Clave_usu;
+    public void setClave_Usu(String Clave_Usu) {
+        this.Clave_Usu = Clave_Usu;
     }
-    private int ID_Usuario;
-    private Estado_Usuario estado_usuario;
-    private String Nombre_usu;
-    private String Clave_usu;
 }

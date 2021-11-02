@@ -33,7 +33,7 @@ public class Tipo_Diagnostico_N {
             {
                 Tipo_Diagnostico E_Tipo_Diagnostico=new Tipo_Diagnostico();
                 E_Tipo_Diagnostico.setID_Tipo_Diagnostico(rs.getInt(1));
-                E_Tipo_Diagnostico.setNombre(rs.getString(2));
+                E_Tipo_Diagnostico.setNombre_TipDia(rs.getString(2));
                 
                 boolean add = L_Tipo_Diagnostico.add(E_Tipo_Diagnostico);
                 //error si al anadir un objeto al arraylist de un error

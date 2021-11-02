@@ -10,34 +10,23 @@ package Entidad;
  * @author USUARIO
  */
 public class Marca {
+    
+    private int ID_Marca;
+    private String Nombre_Mar;
 
-    /**
-     * @return the ID_Marca
-     */
     public int getID_Marca() {
         return ID_Marca;
     }
 
-    /**
-     * @param ID_Marca the ID_Marca to set
-     */
     public void setID_Marca(int ID_Marca) {
         this.ID_Marca = ID_Marca;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_Mar() {
+        return Nombre_Mar;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_Mar(String Nombre_Mar) {
+        this.Nombre_Mar = Nombre_Mar;
     }
-    private int ID_Marca;
-    private String Nombre;
 }

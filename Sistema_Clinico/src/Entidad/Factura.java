@@ -12,79 +12,41 @@ import java.util.Date;
  * @author USUARIO
  */
 public class Factura {
+    
+    private int ID_Factura;
+    private Jefe_Almacen jefe_almacen;
+    private Date Fecha_Fac;
+    private double Total_Fac;
 
-    /**
-     * @return the ID_Factura
-     */
     public int getID_Factura() {
         return ID_Factura;
     }
 
-    /**
-     * @param ID_Factura the ID_Factura to set
-     */
     public void setID_Factura(int ID_Factura) {
         this.ID_Factura = ID_Factura;
     }
 
-    /**
-     * @return the proveedor
-     */
-    public Proveedor getProveedor() {
-        return proveedor;
+    public Jefe_Almacen getJefe_almacen() {
+        return jefe_almacen;
     }
 
-    /**
-     * @param proveedor the proveedor to set
-     */
-    public void setProveedor(Proveedor proveedor) {
-        this.proveedor = proveedor;
+    public void setJefe_almacen(Jefe_Almacen jefe_almacen) {
+        this.jefe_almacen = jefe_almacen;
     }
 
-    /**
-     * @return the producto
-     */
-    public Producto getProducto() {
-        return producto;
+    public Date getFecha_Fac() {
+        return Fecha_Fac;
     }
 
-    /**
-     * @param producto the producto to set
-     */
-    public void setProducto(Producto producto) {
-        this.producto = producto;
+    public void setFecha_Fac(Date Fecha_Fac) {
+        this.Fecha_Fac = Fecha_Fac;
     }
 
-    /**
-     * @return the Fecha
-     */
-    public Date getFecha() {
-        return Fecha;
+    public double getTotal_Fac() {
+        return Total_Fac;
     }
 
-    /**
-     * @param Fecha the Fecha to set
-     */
-    public void setFecha(Date Fecha) {
-        this.Fecha = Fecha;
+    public void setTotal_Fac(double Total_Fac) {
+        this.Total_Fac = Total_Fac;
     }
-
-    /**
-     * @return the Total
-     */
-    public double getTotal() {
-        return Total;
-    }
-
-    /**
-     * @param Total the Total to set
-     */
-    public void setTotal(double Total) {
-        this.Total = Total;
-    }
-    private int ID_Factura;
-    private Proveedor proveedor;
-    private Producto producto;
-    private Date Fecha;
-    private double Total;
 }

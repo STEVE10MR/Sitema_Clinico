@@ -32,7 +32,7 @@ public class Marca_N {
             {
                 Marca E_Marca=new Marca();
                 E_Marca.setID_Marca(rs.getInt(1));
-                E_Marca.setNombre(rs.getString(2));
+                E_Marca.setNombre_Mar(rs.getString(2));
                 
                 boolean add = L_Marca.add(E_Marca);
                 //error si al anadir un objeto al arraylist de un error

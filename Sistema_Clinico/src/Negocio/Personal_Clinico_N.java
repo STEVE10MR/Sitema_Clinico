@@ -42,11 +42,11 @@ public class Personal_Clinico_N implements CRUD<Personal_Clinico> {
 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(1));
-                E_Personal_Clinico.setDNI(rs.getString(2));
-                E_Personal_Clinico.setNombre(rs.getString(3));
-                E_Personal_Clinico.setApellido(rs.getString(4));
-                E_Personal_Clinico.setEmail(rs.getString(5));
-                E_Personal_Clinico.setTelefono(rs.getString(6));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(2));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(3));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(4));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(5));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(6));
                 
                 boolean add = L_Personal_Clinico.add(E_Personal_Clinico);
                 //error si al anadir un objeto al arraylist de un error
@@ -82,11 +82,11 @@ public class Personal_Clinico_N implements CRUD<Personal_Clinico> {
                 
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(1));
-                E_Personal_Clinico.setDNI(rs.getString(2));
-                E_Personal_Clinico.setNombre(rs.getString(3));
-                E_Personal_Clinico.setApellido(rs.getString(4));
-                E_Personal_Clinico.setEmail(rs.getString(5));
-                E_Personal_Clinico.setTelefono(rs.getString(6));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(2));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(3));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(4));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(5));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(6));
                 
                 boolean add = L_Personal_Clinico.add(E_Personal_Clinico);
                 //error si al anadir un objeto al arraylist de un error
@@ -124,11 +124,11 @@ public class Personal_Clinico_N implements CRUD<Personal_Clinico> {
                 Personal_Clinico E_Personal_Clinico=new Personal_Clinico();
                 
                 E_Personal_Clinico.setID_Personal_Clinico(rs.getInt(1));
-                E_Personal_Clinico.setDNI(rs.getString(2));
-                E_Personal_Clinico.setNombre(rs.getString(3));
-                E_Personal_Clinico.setApellido(rs.getString(4));
-                E_Personal_Clinico.setEmail(rs.getString(5));
-                E_Personal_Clinico.setTelefono(rs.getString(6));
+                E_Personal_Clinico.setDNI_PerCli(rs.getString(2));
+                E_Personal_Clinico.setNombre_PerCli(rs.getString(3));
+                E_Personal_Clinico.setApellido_PerCli(rs.getString(4));
+                E_Personal_Clinico.setEmail_PerCli(rs.getString(5));
+                E_Personal_Clinico.setTelefono_PerCli(rs.getString(6));
                 
                 return E_Personal_Clinico;
             }
@@ -149,11 +149,11 @@ public class Personal_Clinico_N implements CRUD<Personal_Clinico> {
         try {
             ps=con.prepareStatement(sql);
             ps.setInt(1,obj.getUsuario().getID_Usuario());
-            ps.setString(2,obj.getDNI());
-            ps.setString(3,obj.getNombre());
-            ps.setString(4,obj.getApellido());
-            ps.setString(5,obj.getTelefono());
-            ps.setString(6,obj.getEmail());
+            ps.setString(2,obj.getDNI_PerCli());
+            ps.setString(3,obj.getNombre_PerCli());
+            ps.setString(4,obj.getApellido_PerCli());
+            ps.setString(5,obj.getTelefono_PerCli());
+            ps.setString(6,obj.getEmail_PerCli());
             int fa=ps.executeUpdate();
             
             if(fa>0)
@@ -180,11 +180,11 @@ public class Personal_Clinico_N implements CRUD<Personal_Clinico> {
         try {
             ps=con.prepareStatement(sql);
             
-            ps.setString(1,obj.getDNI());
-            ps.setString(2,obj.getNombre());
-            ps.setString(3,obj.getApellido());
-            ps.setString(4,obj.getTelefono());
-            ps.setString(5,obj.getEmail());
+            ps.setString(1,obj.getDNI_PerCli());
+            ps.setString(2,obj.getNombre_PerCli());
+            ps.setString(3,obj.getApellido_PerCli());
+            ps.setString(4,obj.getTelefono_PerCli());
+            ps.setString(5,obj.getEmail_PerCli());
             ps.setInt(6,obj.getID_Personal_Clinico());
             
             int fa=ps.executeUpdate();

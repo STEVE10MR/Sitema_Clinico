@@ -5,7 +5,6 @@
  */
 package Negocio;
 
-import Entidad.Paciente;
 import Entidad.Proveedor;
 import Negocio.DAO.CRUD;
 import java.sql.Connection;
@@ -26,7 +25,7 @@ public class Proveedor_N implements CRUD<Proveedor> {
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="SELECT P.ID_Proveedor,P.DNI_Pro,P.Nombre_Pro,P.Apellido,P.Telefono";
+        String sql="SELECT P.ID_Proveedor,P.DNI_Pro,P.Nombre_Pro,P.Apellido_Pro,P.Telefono_Pro FROM Proveedor P";
         try{
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
@@ -35,10 +34,10 @@ public class Proveedor_N implements CRUD<Proveedor> {
             {
                 Proveedor E_Proveedor=new Proveedor();
                 E_Proveedor.setID_Proveedor(rs.getInt(1));
-                E_Proveedor.setDNI(rs.getString(2));
-                E_Proveedor.setNombre(rs.getString(3));
-                E_Proveedor.setApellido(rs.getString(4));
-                E_Proveedor.setTelefono(rs.getString(5));
+                E_Proveedor.setDNI_Pro(rs.getString(2));
+                E_Proveedor.setNombre_Pro(rs.getString(3));
+                E_Proveedor.setApellido_Pro(rs.getString(4));
+                E_Proveedor.setTelefono_Pro(rs.getString(5));
 
                 
                 boolean add = L_Proveedor.add(E_Proveedor);
@@ -67,15 +66,15 @@ public class Proveedor_N implements CRUD<Proveedor> {
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
-        String sql="INSERT INTO Proveedor VALUE(?,?,?,?,?);";
+        String sql="INSERT INTO Proveedor VALUE(?,?,?,?);";
         try {
             
             ps=con.prepareStatement(sql);
             
-            ps.setString(1,obj.getDNI());
-            ps.setString(2,obj.getNombre());
-            ps.setString(3,obj.getApellido());
-            ps.setString(4,obj.getTelefono());
+            ps.setString(1,obj.getDNI_Pro());
+            ps.setString(2,obj.getNombre_Pro());
+            ps.setString(3,obj.getApellido_Pro());
+            ps.setString(4,obj.getTelefono_Pro());
 
             int fa=ps.executeUpdate();
             
@@ -104,10 +103,10 @@ public class Proveedor_N implements CRUD<Proveedor> {
             
             ps=con.prepareStatement(sql);
             
-            ps.setString(1,obj.getDNI());
-            ps.setString(2,obj.getNombre());
-            ps.setString(3,obj.getApellido());
-            ps.setString(4,obj.getTelefono());
+            ps.setString(1,obj.getDNI_Pro());
+            ps.setString(2,obj.getNombre_Pro());
+            ps.setString(3,obj.getApellido_Pro());
+            ps.setString(4,obj.getTelefono_Pro());
             ps.setInt(5,obj.getID_Proveedor());
 
             int fa=ps.executeUpdate();

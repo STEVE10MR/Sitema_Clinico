@@ -10,34 +10,23 @@ package Entidad;
  * @author USUARIO
  */
 public class Tipo_Diagnostico {
+    
+    private int ID_Tipo_Diagnostico;
+    private String Nombre_TipDia;
 
-    /**
-     * @return the ID_Tipo_Diagnostico
-     */
     public int getID_Tipo_Diagnostico() {
         return ID_Tipo_Diagnostico;
     }
 
-    /**
-     * @param ID_Tipo_Diagnostico the ID_Tipo_Diagnostico to set
-     */
     public void setID_Tipo_Diagnostico(int ID_Tipo_Diagnostico) {
         this.ID_Tipo_Diagnostico = ID_Tipo_Diagnostico;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_TipDia() {
+        return Nombre_TipDia;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_TipDia(String Nombre_TipDia) {
+        this.Nombre_TipDia = Nombre_TipDia;
     }
-    private int ID_Tipo_Diagnostico;
-    private String Nombre;
 }

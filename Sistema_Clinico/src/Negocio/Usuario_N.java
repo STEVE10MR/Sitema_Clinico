@@ -44,8 +44,8 @@ public class Usuario_N implements CRUD<Usuario> {
             Estado_Usuario E_Estado_Usuario=new Estado_Usuario();
 
             ps.setInt(1,obj.getEstado_usuario().getID_Estado_Usuario());
-            ps.setString(2,obj.getNombre_usu());
-            ps.setString(3,obj.getClave_usu());
+            ps.setString(2,obj.getNombre_Usu());
+            ps.setString(3,obj.getClave_Usu());
 
             int fa=ps.executeUpdate();
             
@@ -74,8 +74,8 @@ public class Usuario_N implements CRUD<Usuario> {
             
             ps=con.prepareStatement(sql);
            ps.setInt(1,obj.getEstado_usuario().getID_Estado_Usuario());
-            ps.setString(1,obj.getNombre_usu());
-            ps.setString(2,obj.getClave_usu());
+            ps.setString(1,obj.getNombre_Usu());
+            ps.setString(2,obj.getClave_Usu());
             ps.setInt(3,obj.getID_Usuario());
 
             int fa=ps.executeUpdate();

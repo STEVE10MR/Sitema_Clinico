@@ -10,34 +10,32 @@ package Entidad;
  * @author USUARIO
  */
 public class Historial_Clinico {
+    
+    private int ID_Historial_Clinico;
+    private Paciente paciente;
+    private int Cantidad_Registros_HisCli;
 
-    /**
-     * @return the ID_Historial_Clinico
-     */
     public int getID_Historial_Clinico() {
         return ID_Historial_Clinico;
     }
 
-    /**
-     * @param ID_Historial_Clinico the ID_Historial_Clinico to set
-     */
     public void setID_Historial_Clinico(int ID_Historial_Clinico) {
         this.ID_Historial_Clinico = ID_Historial_Clinico;
     }
 
-    /**
-     * @return the Cantidad_Registros
-     */
-    public int getCantidad_Registros() {
-        return Cantidad_Registros;
+    public Paciente getPaciente() {
+        return paciente;
     }
 
-    /**
-     * @param Cantidad_Registros the Cantidad_Registros to set
-     */
-    public void setCantidad_Registros(int Cantidad_Registros) {
-        this.Cantidad_Registros = Cantidad_Registros;
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
     }
-    private int ID_Historial_Clinico;
-    private int Cantidad_Registros;
+
+    public int getCantidad_Registros_HisCli() {
+        return Cantidad_Registros_HisCli;
+    }
+
+    public void setCantidad_Registros_HisCli(int Cantidad_Registros_HisCli) {
+        this.Cantidad_Registros_HisCli = Cantidad_Registros_HisCli;
+    }
 }

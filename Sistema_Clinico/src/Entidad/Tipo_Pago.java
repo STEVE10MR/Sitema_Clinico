@@ -10,34 +10,23 @@ package Entidad;
  * @author USUARIO
  */
 public class Tipo_Pago {
+    
+    private int ID_Tipo_Pago;
+    private String Nombre_TipPag;
 
-    /**
-     * @return the ID_Tipo_Pago
-     */
     public int getID_Tipo_Pago() {
         return ID_Tipo_Pago;
     }
 
-    /**
-     * @param ID_Tipo_Pago the ID_Tipo_Pago to set
-     */
     public void setID_Tipo_Pago(int ID_Tipo_Pago) {
         this.ID_Tipo_Pago = ID_Tipo_Pago;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_TipPag() {
+        return Nombre_TipPag;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_TipPag(String Nombre_TipPag) {
+        this.Nombre_TipPag = Nombre_TipPag;
     }
-    private int ID_Tipo_Pago;
-    private String Nombre;
 }

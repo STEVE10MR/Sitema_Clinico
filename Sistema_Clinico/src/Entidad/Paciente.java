@@ -10,124 +10,77 @@ package Entidad;
  * @author USUARIO
  */
 public class Paciente {
+    
+    private int ID_Paciente;
+    private String DNI_Pac;
+    private String Nombre_Pac;
+    private String Apellido_Pac;
+    private String Telefono_Pac;
+    private int Edad_Pac;
+    private String Afilacion_Pac;
+    private String SIS_Pac;
 
-    /**
-     * @return the ID_Paciente
-     */
     public int getID_Paciente() {
         return ID_Paciente;
     }
 
-    /**
-     * @param ID_Paciente the ID_Paciente to set
-     */
     public void setID_Paciente(int ID_Paciente) {
         this.ID_Paciente = ID_Paciente;
     }
 
-    /**
-     * @return the DNI
-     */
-    public String getDNI() {
-        return DNI;
+    public String getDNI_Pac() {
+        return DNI_Pac;
     }
 
-    /**
-     * @param DNI the DNI to set
-     */
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public void setDNI_Pac(String DNI_Pac) {
+        this.DNI_Pac = DNI_Pac;
     }
 
-    /**
-     * @return the Nombre
-     */
-    public String getNombre() {
-        return Nombre;
+    public String getNombre_Pac() {
+        return Nombre_Pac;
     }
 
-    /**
-     * @param Nombre the Nombre to set
-     */
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre_Pac(String Nombre_Pac) {
+        this.Nombre_Pac = Nombre_Pac;
     }
 
-    /**
-     * @return the Apellido
-     */
-    public String getApellido() {
-        return Apellido;
+    public String getApellido_Pac() {
+        return Apellido_Pac;
     }
 
-    /**
-     * @param Apellido the Apellido to set
-     */
-    public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+    public void setApellido_Pac(String Apellido_Pac) {
+        this.Apellido_Pac = Apellido_Pac;
     }
 
-    /**
-     * @return the Telefono
-     */
-    public String getTelefono() {
-        return Telefono;
+    public String getTelefono_Pac() {
+        return Telefono_Pac;
     }
 
-    /**
-     * @param Telefono the Telefono to set
-     */
-    public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+    public void setTelefono_Pac(String Telefono_Pac) {
+        this.Telefono_Pac = Telefono_Pac;
     }
 
-    /**
-     * @return the Edad
-     */
-    public int getEdad() {
-        return Edad;
+    public int getEdad_Pac() {
+        return Edad_Pac;
     }
 
-    /**
-     * @param Edad the Edad to set
-     */
-    public void setEdad(int Edad) {
-        this.Edad = Edad;
+    public void setEdad_Pac(int Edad_Pac) {
+        this.Edad_Pac = Edad_Pac;
     }
 
-    /**
-     * @return the Afilacion
-     */
-    public String getAfilacion() {
-        return Afilacion;
+    public String getAfilacion_Pac() {
+        return Afilacion_Pac;
     }
 
-    /**
-     * @param Afilacion the Afilacion to set
-     */
-    public void setAfilacion(String Afilacion) {
-        this.Afilacion = Afilacion;
+    public void setAfilacion_Pac(String Afilacion_Pac) {
+        this.Afilacion_Pac = Afilacion_Pac;
     }
 
-    /**
-     * @return the SIS
-     */
-    public String getSIS() {
-        return SIS;
+    public String getSIS_Pac() {
+        return SIS_Pac;
     }
 
-    /**
-     * @param SIS the SIS to set
-     */
-    public void setSIS(String SIS) {
-        this.SIS = SIS;
+    public void setSIS_Pac(String SIS_Pac) {
+        this.SIS_Pac = SIS_Pac;
     }
-    private int ID_Paciente;
-    private String DNI;
-    private String Nombre;
-    private String Apellido;
-    private String Telefono;
-    private int Edad;
-    private String Afilacion;
-    private String SIS;
 }

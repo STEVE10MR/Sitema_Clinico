@@ -10,94 +10,68 @@ package Entidad;
  * @author USUARIO
  */
 public class Detalle_Factura {
+    
+    private int ID_Detalle_Factura;
+    private Proveedor proveedor;
+    private Medicamento medicamento;
+    private Factura factura;
+    private int Cantidad_DetFac;
+    private double Subtotal_DetFac;
+    private double Importe_DetFac;
 
-    /**
-     * @return the ID_Detalle_Factura
-     */
     public int getID_Detalle_Factura() {
         return ID_Detalle_Factura;
     }
 
-    /**
-     * @param ID_Detalle_Factura the ID_Detalle_Factura to set
-     */
     public void setID_Detalle_Factura(int ID_Detalle_Factura) {
         this.ID_Detalle_Factura = ID_Detalle_Factura;
     }
 
-    /**
-     * @return the proveedor
-     */
     public Proveedor getProveedor() {
         return proveedor;
     }
 
-    /**
-     * @param proveedor the proveedor to set
-     */
     public void setProveedor(Proveedor proveedor) {
         this.proveedor = proveedor;
     }
 
-    /**
-     * @return the producto
-     */
-    public Producto getProducto() {
-        return producto;
+    public Medicamento getMedicamento() {
+        return medicamento;
     }
 
-    /**
-     * @param producto the producto to set
-     */
-    public void setProducto(Producto producto) {
-        this.producto = producto;
+    public void setMedicamento(Medicamento medicamento) {
+        this.medicamento = medicamento;
     }
 
-    /**
-     * @return the Cantidad
-     */
-    public int getCantidad() {
-        return Cantidad;
+    public Factura getFactura() {
+        return factura;
     }
 
-    /**
-     * @param Cantidad the Cantidad to set
-     */
-    public void setCantidad(int Cantidad) {
-        this.Cantidad = Cantidad;
+    public void setFactura(Factura factura) {
+        this.factura = factura;
     }
 
-    /**
-     * @return the Subtotal
-     */
-    public double getSubtotal() {
-        return Subtotal;
+    public int getCantidad_DetFac() {
+        return Cantidad_DetFac;
     }
 
-    /**
-     * @param Subtotal the Subtotal to set
-     */
-    public void setSubtotal(double Subtotal) {
-        this.Subtotal = Subtotal;
+    public void setCantidad_DetFac(int Cantidad_DetFac) {
+        this.Cantidad_DetFac = Cantidad_DetFac;
     }
 
-    /**
-     * @return the Importe
-     */
-    public double getImporte() {
-        return Importe;
+    public double getSubtotal_DetFac() {
+        return Subtotal_DetFac;
     }
 
-    /**
-     * @param Importe the Importe to set
-     */
-    public void setImporte(double Importe) {
-        this.Importe = Importe;
+    public void setSubtotal_DetFac(double Subtotal_DetFac) {
+        this.Subtotal_DetFac = Subtotal_DetFac;
     }
-    private int ID_Detalle_Factura;
-    private Proveedor proveedor;
-    private Producto producto;
-    private int Cantidad;
-    private double Subtotal;
-    private double Importe;
+
+    public double getImporte_DetFac() {
+        return Importe_DetFac;
+    }
+
+    public void setImporte_DetFac(double Importe_DetFac) {
+        this.Importe_DetFac = Importe_DetFac;
+    }
 }
