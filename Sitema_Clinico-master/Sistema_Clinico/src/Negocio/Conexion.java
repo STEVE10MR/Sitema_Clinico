@@ -18,7 +18,7 @@ public class Conexion {
     {
         try {
             Class.forName("com.mysql.jdbc.Driver");//proveedor
-            return (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/SIADME", "root", "");
+            return (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3307/SIADME", "root", "");
         } 
         catch (ClassNotFoundException e)
         {

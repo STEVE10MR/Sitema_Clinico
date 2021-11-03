@@ -154,4 +154,23 @@ public class Paciente_N implements CRUD<Paciente> {
                 JOptionPane.showMessageDialog(null,e);
         }
     }
+    /*public ResultSet BuscarPaciente(Paciente E_Paciente) {
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        Connection con=(Connection)Conexion.Conectar();
+        String sql="SELECT * FROM Paciente WHERE DNI_Pac=?;";
+        try
+        {
+            ps=con.prepareStatement(sql);
+            ps.setString(1,E_Paciente.getDNI_Pac());
+            rs=ps.executeQuery();
+            return rs;
+        }
+        
+        catch (Exception e)
+        {
+            rs = null;
+            return rs;
+        }
+    }*/
 }

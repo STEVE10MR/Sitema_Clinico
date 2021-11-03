@@ -3,35 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Usuario_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Jefe_Almacen_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Proveedor_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Especialidad_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Estado_Cita_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Detalle_Orden_Medica_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Personal_Administrativo_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Prescripcion_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Personal_Clinico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Medico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Registro_Clinico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Historial_Clinico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Diagnostico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Conexion.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Progreso_Prescripcion_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Boleta_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Examen_Fisico_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Medicamento_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Estado_Usuario_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Orden_Medica_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Consulta_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Enfermero_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Paciente_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Cajero_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Cita_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Signos_Vitales_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Categoria_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Marca_N.java</file>
-            <file>file:/C:/Users/USUARIO/Videos/Proyecto/Proyecto/Sistema_Clinico/src/Negocio/Tipo_Diagnostico_N.java</file>
+            <file>file:/F:/Trabajos%20UPT/VI%20-%20Ciclo/Programación%20III/Unidad%20II/Proyecto%20Unidad/Proyecto%20SIADME/Sitema_Clinico-master/Sistema_Clinico/src/Negocio/Historial_Clinico_N.java</file>
+            <file>file:/F:/Trabajos%20UPT/VI%20-%20Ciclo/Programación%20III/Unidad%20II/Proyecto%20Unidad/Proyecto%20SIADME/Sitema_Clinico-master/Sistema_Clinico/src/Negocio/Registro_Clinico_N.java</file>
+            <file>file:/F:/Trabajos%20UPT/VI%20-%20Ciclo/Programación%20III/Unidad%20II/Proyecto%20Unidad/Proyecto%20SIADME/Sitema_Clinico-master/Sistema_Clinico/src/Negocio/Paciente_N.java</file>
+            <file>file:/F:/Trabajos%20UPT/VI%20-%20Ciclo/Programación%20III/Unidad%20II/Proyecto%20Unidad/Proyecto%20SIADME/Sitema_Clinico-master/Sistema_Clinico/src/Presentacion/FrmHistorial_Clinico.java</file>
+            <file>file:/F:/Trabajos%20UPT/VI%20-%20Ciclo/Programación%20III/Unidad%20II/Proyecto%20Unidad/Proyecto%20SIADME/Sitema_Clinico-master/Sistema_Clinico/src/Negocio/Conexion.java</file>
         </group>
     </open-files>
 </project-private>

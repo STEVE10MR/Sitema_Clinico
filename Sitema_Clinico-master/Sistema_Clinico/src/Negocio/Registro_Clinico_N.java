@@ -91,7 +91,7 @@ public class Registro_Clinico_N implements CRUD<Registro_Clinico>{
         }
     }
 
-    public ResultSet BuscarTodos(Registro_Clinico objRegistro_Clinico) {//BUSCA el todos los registros de un paciente
+    public ResultSet BuscarTodos(String DNI) {//BUSCA el todos los registros de un paciente
         PreparedStatement ps=null;
         ResultSet rs=null;
         Connection con=(Connection)Conexion.Conectar();
@@ -111,7 +111,8 @@ public class Registro_Clinico_N implements CRUD<Registro_Clinico>{
         try
         {
             ps=con.prepareStatement(sql);
-            ps.setString(1,objRegistro_Clinico.getPaciente().getDNI_Pac());
+            //ps.setString(1,objRegistro_Clinico.getPaciente().getDNI_Pac());
+            ps.setString(1,DNI);
             rs=ps.executeQuery();
             return rs;
         }
